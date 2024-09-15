@@ -25,5 +25,16 @@ Fifth argument is the sampling rate here 512
 
 The rest of the arguments should be set to 0 in this version
 
-Step 3: 
+Step 3: Run the MDEA approach to obtain entropy vs. log (window length)
+
+E.g., [delta, DE, de]  = MDEA(DATA(:,1), median(Stripe_out), 1, 0.4, 0.8, 1);
+You can use as stripe size the median of the output of  Stripe_size_search
+
+Step 4a:
+
+
+
+Step 4b:
+
+
 
