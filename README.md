@@ -30,9 +30,11 @@ Step 3: Run the MDEA approach to obtain entropy vs. log (window length)
 E.g., [delta, DE, de]  = MDEA(DATA(:,1), median(Stripe_out), 1, 0.4, 0.8, 1);
 You can use as stripe size the median of the output of  Stripe_size_search
 
-Step 4a:
+Step 4a: Determine the linear region in the entropy vs log (window length) from which the slope (and therefore delta) will b extracted from
 
+E.g., [linearStartIndex, linearEndIndex, deltas] = findLinearPortion_v2(DE, de, 0.05, DATA(:,1)./median(Stripe_out), median(Stripe_out), 0);
 
+The third argument is a threshold controlling the sensitivity of determining a linear region.
 
 Step 4b:
 
