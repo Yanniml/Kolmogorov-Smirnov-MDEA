@@ -1,5 +1,5 @@
 Step 1: Load S037.SH.L.sess6.4chans.mat
-
+\newline
 The matrix DATA contains 4 columns; 
 
 1st column corresponds to an EEG signal
