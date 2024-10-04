@@ -47,4 +47,4 @@ E.g., [linearStartIndex, linearEndIndex, deltas] = findTwoLinearPortions(DE, de,
 This is used for the  ECG signals. Check also Fig. 8 (top right) in paper.
 
 
-The previous steps are summarized in script MDEoptstripe which loads the data in S037.SH.L.sess6.4chans.mat and applies the proposed MDEA approach with automatic stripe size and linear fit region selection using 30sec windows with 20 second overlap.
+The previous steps are summarized in script **MDEoptstripe.m** which loads the data in **S037.SH.L.sess6.4chans.mat** and applies the proposed MDEA approach with automatic stripe size and linear fit region selection using 30sec windows with 20 second overlap.
