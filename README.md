@@ -40,8 +40,11 @@ E.g., [linearStartIndex, linearEndIndex, deltas] = findLinearPortion_v2(DE, de, 
 
 The third argument is a threshold controlling the sensitivity of determining a linear region.
 
+
 **or Step 4b: Alternative option to recover linear region for estimating complexity scale delta**
 E.g., [linearStartIndex, linearEndIndex, deltas] = findTwoLinearPortions(DE, de, 0.005, DATA(:,1)./median(Stripe_out), median(Stripe_out), 0);
 
 This is used for the  ECG signals. Check also Fig. 8 (top right) in paper.
 
+
+The previous steps are summarized in script MDEoptstripe which loads the data in S037.SH.L.sess6.4chans.mat and applies the proposed MDEA approach with automatic stripe size and linear fit region selection using 30sec windows with 20 second overlap.
